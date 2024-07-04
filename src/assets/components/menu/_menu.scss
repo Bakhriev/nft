@@ -1,0 +1,36 @@
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	&__link {
+		display: inline-block;
+		padding: 12px 20px;
+
+		font-weight: 600;
+		color: var(--white);
+
+		border: 1px solid transparent;
+
+		transition:
+			border-color 150ms ease,
+			rotate 150ms ease;
+		outline: none;
+
+		@include hover {
+			border-color: var(--border);
+			rotate: 4deg;
+		}
+
+		&:active {
+			scale: 0.97;
+			border-color: var(--border);
+			rotate: 4deg;
+		}
+
+		&:focus-visible {
+			border-color: var(--border);
+			rotate: 4deg;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.btn {
+	padding: 20px 30px;
+
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	background-color: var(--violet);
+	border-radius: 20px;
+
+	font-weight: 600;
+	color: var(--white);
+
+	outline: none;
+
+	@media screen and (max-width: 992px) {
+		padding: 15px 20px;
+	}
+
+	span,
+	svg {
+		transition: rotate 150ms ease;
+	}
+
+	@include hover {
+		svg {
+			rotate: 10deg;
+		}
+		span {
+			rotate: -20deg;
+		}
+	}
+
+	&:active {
+		scale: 0.97;
+
+		svg {
+			rotate: 10deg;
+		}
+		span {
+			rotate: -20deg;
+		}
+	}
+
+	&:focus-visible {
+		outline: 1px solid var(--white);
+		outline-offset: 2px;
+
+		svg {
+			rotate: 10deg;
+		}
+		span {
+			rotate: -20deg;
+		}
+	}
+}

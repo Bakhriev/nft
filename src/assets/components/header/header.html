@@ -1,3 +1,37 @@
-<header class="header header--absolute">
-	<div class="header__container container"></div>
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			@include('../logo/logo.html')
+			<div class="header__wrapper">
+				<nav>
+					<ul class="header__menu menu list-reset">
+						<li>
+							<a href="#" class="menu__link">Marketplace</a>
+						</li>
+						<li>
+							<a href="#" class="menu__link">Rankings</a>
+						</li>
+						<li>
+							<a href="#" class="menu__link">Connect a wallet</a>
+						</li>
+					</ul>
+				</nav>
+
+				<button class="btn btn-reset">
+					<svg width="20" height="20">
+						<use href="./assets/img/svg/sprite.svg#user"></use>
+					</svg>
+					<span>Sign Up</span>
+				</button>
+			</div>
+
+			<button
+				class="header__burger burger btn-reset"
+				aria-label="open mobile navigation menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
 </header>
