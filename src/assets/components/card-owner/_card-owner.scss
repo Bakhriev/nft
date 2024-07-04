@@ -1,0 +1,39 @@
+.card-owner {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+
+	border: 1px solid transparent;
+	border-radius: 10px;
+
+	padding: 5px 0;
+
+	&__avatar {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	&__name {
+		color: var(--white);
+	}
+
+	transition: rotate 150ms ease;
+
+	@include hover {
+		rotate: 4deg;
+	}
+
+	&:active {
+		rotate: 4deg;
+		scale: 0.97;
+
+		outline: 1px solid var(--white);
+	}
+
+	&:focus-visible {
+		rotate: 4deg;
+		outline: 1px solid var(--white);
+	}
+}

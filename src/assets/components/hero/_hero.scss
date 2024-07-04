@@ -1,0 +1,62 @@
+.hero {
+	&__inner {
+		display: flex;
+		gap: 30px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		flex-grow: 1;
+		width: 50%;
+
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 67px;
+		text-transform: capitalize;
+		color: var(--white);
+
+		@media screen and (max-width: 992px) {
+			font-size: 38px;
+		}
+	}
+
+	&__text {
+		font-size: 22px;
+		line-height: 1.6;
+		text-transform: capitalize;
+		color: var(--white);
+		@media screen and (max-width: 992px) {
+			font-size: 16px;
+		}
+	}
+
+	&__btn {
+		width: 224px;
+		@media screen and (max-width: 450px) {
+			width: 100%;
+		}
+	}
+
+	&__card {
+		flex-grow: 1;
+		width: 50%;
+
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			max-width: 500px;
+		}
+	}
+}
