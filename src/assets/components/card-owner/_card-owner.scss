@@ -22,18 +22,20 @@
 	transition: rotate 150ms ease;
 
 	@include hover {
-		rotate: 4deg;
+		rotate: 2deg;
+
+		outline: 1px solid var(--white);
 	}
 
 	&:active {
-		rotate: 4deg;
+		rotate: 2deg;
 		scale: 0.97;
 
 		outline: 1px solid var(--white);
 	}
 
 	&:focus-visible {
-		rotate: 4deg;
+		rotate: 2deg;
 		outline: 1px solid var(--white);
 	}
 }
