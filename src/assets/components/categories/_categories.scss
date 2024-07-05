@@ -1,0 +1,29 @@
+.categories {
+	&__container {
+	}
+
+	&__inner {
+	}
+
+	&__headlines {
+		margin-bottom: 60px;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+
+		@media screen and (max-width: 992px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media screen and (max-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+	}
+}
