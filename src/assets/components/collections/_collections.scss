@@ -1,0 +1,44 @@
+.collections {
+	&__container {
+	}
+
+	&__inner {
+	}
+
+	&__headlines {
+		margin-bottom: 60px;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.title {
+	font-weight: 600;
+	font-size: 38px;
+	line-height: 1.2;
+	text-transform: capitalize;
+	color: var(--white);
+
+	@media screen and (max-width: 992px) {
+		font-size: 28px;
+	}
+}
+
+.section-headlines {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	&__subtitle {
+		font-size: 22px;
+		line-height: 1.4;
+		text-transform: capitalize;
+		color: var(--white);
+
+		@media screen and (max-width: 992px) {
+			font-size: 16px;
+		}
+	}
+}

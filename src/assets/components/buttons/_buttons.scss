@@ -13,6 +13,7 @@
 	color: var(--white);
 
 	outline: none;
+	fill: var(--white);
 
 	@media screen and (max-width: 992px) {
 		padding: 15px 20px;
@@ -46,6 +47,73 @@
 	&:focus-visible {
 		outline: 1px solid var(--white);
 		outline-offset: 2px;
+
+		svg {
+			rotate: 10deg;
+		}
+		span {
+			rotate: -20deg;
+		}
+	}
+}
+
+.btn-secondary {
+	padding: 20px 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+
+	background-color: var(--background);
+	border: 2px solid var(--violet);
+
+	border-radius: 20px;
+
+	font-weight: 600;
+	color: var(--white);
+
+	outline: none;
+	fill: var(--violet);
+
+	transition: background-color 150ms ease;
+
+	span,
+	svg {
+		transition:
+			rotate 150ms ease,
+			fill 150ms ease;
+	}
+
+	@include hover {
+		background-color: var(--violet);
+		fill: var(--white);
+		svg {
+			rotate: 10deg;
+		}
+		span {
+			rotate: -20deg;
+		}
+	}
+
+	&:active {
+		scale: 0.97;
+		background-color: var(--violet);
+		fill: var(--white);
+
+		svg {
+			rotate: 10deg;
+		}
+		span {
+			rotate: -20deg;
+		}
+	}
+
+	&:focus-visible {
+		outline: 1px solid var(--white);
+		outline-offset: 2px;
+		background-color: var(--violet);
+		fill: var(--white);
 
 		svg {
 			rotate: 10deg;
